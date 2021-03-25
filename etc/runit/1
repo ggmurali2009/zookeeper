@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "STAGE 1: starting ..............."
+echo "Do all your init tasks/ pre reqs  here "
+echo "STAGE 1: stopping ..............."
