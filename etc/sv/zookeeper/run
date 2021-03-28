@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo " starting zookeeper"
+exec /opt/zookeeper/bin/zkServer.sh start-foreground /etc/zookeeper/conf/zoo.cfg
