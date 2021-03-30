@@ -1,11 +1,9 @@
-FROM alpine:latest
-RUN apk add --no-cache curl \
-    wget \
-    runit \
-    pstree \
-    findmnt \
-    bash \
-    openjdk8
+FROM ubuntu:latest
+
+RUN apt-get update \
+    && apt-get install -y curl wget runit default-jre-headless psmisc dnsutils \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 
 ENV ZOOKEEPER_VERSION=3.4.7 \
